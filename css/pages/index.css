@@ -1,0 +1,57 @@
+body {
+  max-width: 50rem;
+  margin: auto;
+}
+
+#chloe, #summary {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 321px) {
+  #chloe, #summary {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #skills, #values, #experience, #education {
+    margin-top: 3rem;
+  }
+}
+
+#chloe {
+  font-size: 4rem;
+  line-height: 0.8;
+}
+
+@media only screen and (min-width: 321px) {
+  #chloe {
+    font-size: 5rem;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  #chloe {
+    font-size: 6rem;
+  }
+}
+
+#summary p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 600px) {
+  #summary p {
+    font-size: 1.3rem;
+    line-height: 1.75;
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  #summary p {
+    font-size: 1.5rem;
+    line-height: 1.75;
+  }
+}
