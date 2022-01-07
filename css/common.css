@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  padding: 1.5rem;
   font-family: 'Work Sans', sans-serif;
   background-color: #f9faf9;
   color: #28405e;
@@ -19,4 +18,22 @@ ul { margin: 0; }
 
 a {
   color: #156180;
+}
+
+/* components --------------------------------------------------------------- */
+
+.pill-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill-list li {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 1em;
+  padding: 0.25em 0.5em;
+  background-color: #e7ebec;
+  color: #25576b;
 }

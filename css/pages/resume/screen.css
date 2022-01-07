@@ -1,118 +1,103 @@
-/* components --------------------------------------------------------------- */
-
-.skills-list,
-.values-list {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skills-list li,
-.values-list li {
-  display: inline-block;
-  white-space: nowrap;
-  border-radius: 1em;
-  padding: 0.25em 0.5em;
-  background-color: #e7ebec;
-  color: #25576b;
-}
-
 /* page layout -------------------------------------------------------------- */
 
 body {
   max-width: 50rem;
   margin: auto;
+  padding: 1rem;
 }
 
-#chloe, #summary {
+#header, #summary {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-#skills, #values, #experience, #education {
+#contact, #skills, #values, #experience, #education {
   margin-top: 2rem;
 }
 
-@media only screen and (min-width: 321px) {
-  #chloe, #summary {
+@media (min-width: 321px) {
+  #header, #summary {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
 
-  #skills, #values, #experience, #education {
+  #contact, #skills, #values, #experience, #education {
     margin-top: 3rem;
   }
 }
 
-@media only screen and (min-width: 90rem) {
+@media (min-width: 90rem) {
   body {
-    padding: 0;
-    display: grid;
     max-width: 60rem;
+  }
+
+  #main {
+    display: grid;
     grid-template-areas:
-      "chloe chloe"
       "summary summary"
-      "left right";
+      "aside experience";
     grid-template-columns: 30% 70%;
     column-gap: 1rem;
   }
 
-  #chloe {
-    grid-area: chloe;
-    margin-top: 10rem;
-    margin-bottom: 0;
-  }
-
   #summary {
     grid-area: summary;
+    margin-top: 0;
   }
 
-  .wide-left {
-    grid-area: left;
+  #aside {
+    grid-area: aside;
   }
 
-  .wide-right {
-    grid-area: right;
+  #experience {
+    grid-area: experience;
+  }
+
+  #contact, #experience {
+    margin-top: 0;
   }
 }
 
 /* section headings --------------------------------------------------------- */
 
-#chloe {
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+}
+
+#header {
   font-size: 4rem;
   line-height: 0.8;
 }
 
-@media only screen and (min-width: 321px) {
-  #chloe {
+@media (min-width: 321px) {
+  #header {
     font-size: 5rem;
     line-height: 1;
   }
 }
 
-@media only screen and (min-width: 50rem) {
-  #chloe {
+@media (min-width: 50rem) {
+  #header {
     font-size: 6rem;
   }
 }
 
-#summary-heading, #skills-heading, #values-heading, #education-heading,
-#experience-heading {
+#contact-heading, #summary-heading, #skills-heading, #values-heading,
+#education-heading, #experience-heading {
   margin-bottom: 1rem;
   font-size: 1.6rem;
 }
 
-@media only screen and (min-width: 321px) {
-  #summary-heading, #skills-heading, #values-heading, #education-heading,
-  #experience-heading {
+@media (min-width: 321px) {
+  #contact-heading, #summary-heading, #skills-heading, #values-heading,
+  #education-heading, #experience-heading {
     font-size: 1.75rem;
   }
 }
 
-@media only screen and (min-width: 50rem) {
-  #summary-heading, #skills-heading, #values-heading, #education-heading,
-  #experience-heading {
+@media (min-width: 50rem) {
+  #contact-heading, #summary-heading, #skills-heading, #values-heading,
+  #education-heading, #experience-heading {
     font-size: 2rem;
   }
 }
@@ -128,18 +113,47 @@ body {
   #summary-heading { display: none; }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   #summary p {
     font-size: 1.3rem;
     line-height: 1.75;
   }
 }
 
-@media only screen and (min-width: 50rem) {
+@media (min-width: 50rem) {
   #summary p {
     font-size: 1.5rem;
     line-height: 1.75;
   }
+}
+
+/* section: contact --------------------------------------------------------- */
+
+#contact-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+}
+
+#contact-list li {
+  display: block;
+}
+
+#contact-list li:nth-of-type(1) {
+  margin-bottom: 0.85rem;
+}
+
+#contact-list a {
+  display: block;
+  text-decoration: none;
+}
+
+#contact-list a:hover,
+#contact-list a:focus,
+#contact-list a:active {
+  color: #28405e;
+  text-decoration: underline;
 }
 
 /* section: education ------------------------------------------------------- */
@@ -155,13 +169,24 @@ body {
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 321px) {
+#experience .role-heading .role {
+  display: block;
+  font-size: 1.25rem;
+}
+
+#experience .role-heading .organization,
+#experience .role-heading .date {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 321px) {
   #experience .role-heading {
     font-size: 1.25rem;
   }
 }
 
-@media only screen and (min-width: 50rem) {
+@media (min-width: 50rem) {
   #experience .role-heading {
     font-size: 1.5rem;
   }

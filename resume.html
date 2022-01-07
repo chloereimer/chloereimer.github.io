@@ -2,198 +2,220 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+
     <title>Resume | Chloe Reimer</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/pages/resume.css">
+    <link rel="stylesheet" media="print" href="css/pages/resume/print.css">
+    <link rel="stylesheet" media="screen" href="css/pages/resume/screen.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 id="chloe">
-      Chloe Reimer
-    </h1>
-    
-    <section id="summary" aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Summary</h2>
-      <p>
-        I'm a backend engineer, technical lead, and all-around enthusiast who loves (like, actually loves) to craft elegant, scalable systems that empower both users and developers alike. Throughout my career, I've had the chance to help drive all kinds of organizational change—including Agile, DevOps, and DE&I—all in service of making better products and happier humans.
-      </p>
-    </section>
+    <div class="page-fill"></div>
+    <header id="header">
+      <h1>Chloe Reimer</h1>
+    </header>
 
-    <div class="wide-left">    
-      <section id="skills" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
-        <ul class="skills-list">
-          <li>Ruby on Rails</li>
-          <li>AWS</li>
-          <li>CI/CD</li>
-          <li>Strategic Planning</li>
-          <li>Docker</li>
-          <li>PostgreSQL</li>
-          <li>GraphQL</li>
-          <li>Agile</li>
-          <li>Kafka</li>
-          <li>Change Management</li>
-          <li>Diversity, Equity & Inclusion (DE&I)</li>
-        </ul>
+    <main id="main">
+      <section id="summary">
+        <p>A backend engineer, technical lead, and all-around enthusiast who loves (like, actually loves) to craft elegant, scalable systems that empower both users and developers alike.</p>
       </section>
 
-      <section id="values" aria-labelledby="values-heading">
-        <h2 id="values-heading">Values</h2>
-        <ul class="values-list">
-          <li>Empathy</li>
-          <li>Inclusivity</li>
-          <li>Growth Mindset</li>
-          <li>Ownership</li>
-          <li>Candour</li>
-        </ul>
-      </section>
-      
-      <section id="education" aria-labelledby="education-heading">
-        <h2 id="education-heading">Education</h2>
-        <p>
-          <span class="program">Advanced Diploma, Software Development</span>
-          <span class="institution">Mohawk College</span>
-          <span class="date">(2012-2014)</span>
-        </p>
-      </section>
-    </div>
+      <aside id="aside">
+        <section id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <ul id="contact-list">
+            <li><a href="mailto:chloe.reimer@gmail.com">chloe.reimer@gmail.com</a></li>
+            <li><a href="tel:289-689-5710">289-689-5710</a></li>
+          </ul>
+        </section>
 
-    <div class="wide-right">
+        <section id="skills" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+          <ul class="skills-list pill-list">
+            <li>Ruby on Rails</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+            <li>Strategic Planning</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+            <li>GraphQL</li>
+            <li>Agile</li>
+            <li>Kafka</li>
+            <li>Change Management</li>
+            <li>Diversity/Equity/Inclusion (DEI)</li>
+          </ul>
+        </section>
+
+        <section id="values" aria-labelledby="values-heading">
+          <h2 id="values-heading">Values</h2>
+          <ul class="values-list pill-list">
+            <li>Empathy</li>
+            <li>Inclusivity</li>
+            <li>Growth Mindset</li>
+            <li>Ownership</li>
+            <li>Candour</li>
+          </ul>
+        </section>
+
+        <section id="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <p>
+            <span class="program">Advanced Diploma, Software Development</span>
+            <span class="institution">Mohawk College</span>
+            <span class="date">(2012-2014)</span>
+          </p>
+        </section>
+      </aside>
+
       <section id="experience" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>
-        <h3 class="role-heading">
-          <span class="role">Technical Lead, Identity</span>
-          <span class="organization">Prodigy Education</span>
-          <span class="date">Aug 2021-Present</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>Ruby on Rails</li>
-          <li>Strategic Planning</li>
-          <li>Mentorship</li>
-          <li>AWS</li>
-          <li>CI/CD</li>
-          <li>Change Management</li>
-          <li>Apache Kafka</li>
-          <li>GraphQL</li>
-          <li>Legal Compliance</li>
-          <li>Diversity, Equity & Inclusion (DE&I)</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Created and drove a backlog of continuous improvement initiatives, emphasizing "the ilities"—maintainability, reliability, security, etc.</li>
-          <li>Specified, prototyped & drove an inner-source initiative to leverage GraphQL caching to improve the performance of an API endpoint that receives >1.5M reqs/hr at peak traffic</li>
-          <li>Collaborated with security and legal specialists to architect and implement a technically and legally robust solution to a major piece of legislation</li>
-          <li>Continued DE&I advocacy by collaborating with an external consultant to gather insights, campaiging to add a full-time DE&I position to the hiring plan, and continually learning how to better support my marginalized colleagues</li>
-        </ul>
-        
-        <h3 class="role-heading">
-          <span class="role">Backend Engineer II, Identity</span>
-          <span class="organization">Prodigy Education</span>
-          <span class="date">Jan 2020-Aug 2021</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL</li>
-          <li>AWS</li>
-          <li>CI/CD</li>
-          <li>Apache Kafka</li>
-          <li>Diversity, Equity & Inclusion (DE&I)</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Extended OAuth/OIDC functionality within a Rails monolith that serves 5M+ daily sessions and 13M+ daily API requests</li>
-          <li>Implemented a Kafka producer within a Rails monolith, as well as a consumer as a separate service, to enable event-driven communication with other services</li>
-          <li>Improved the consistency and reliability of the development experience by driving an initiative to containerize processes used on development machines</li>
-          <li>Advocated for DE&I by consulting on product decisions, running DE&I retrospectives, and creating/sharing DE&I resources</li>
-        </ul>
-        
-        <h3 class="role-heading">
-          <span class="role">Scrum Master/Agile Coach</span>
-          <span class="organization">Prodigy Education</span>
-          <span class="date">Jun 2017–Jan 2020</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>Agile Methodologies</li>
-          <li>Mentorship</li>
-          <li>Change Management</li>
-          <li>Diversity, Equity & Inclusion (DE&I)</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Attained CSM certification and served as Scrum Master on 2-3 teams concurrently</li>
-          <li>Transformed Prodigy's Agile practices & culture by leading dozens of group training sessions, individually mentoring over 15 part- and full-time Scrum Masters, and orchestrating company-wide initiatives like quarterly team health checks</li>
-          <li>Co-founded an employee-organized Diversity, Equity & Inclusion Committee; organized a company-wide DE&I pulse survey that would lay the foundation for regular advocacy work across the organization</li>
-        </ul>
-        
-        <h3 class="role-heading">
-          <span class="role">Full Stack Developer</span>
-          <span class="organization">Prodigy Education</span>
-          <span class="date">Apr 2016–Dec 2017</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>GraphQL</li>
-          <li>Node</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-          <li>Backbone.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Contributed to a mix of monoliths & microservices to add user-facing features, address security issues, improve API performance, and enable automated testing</li>
-          <li>Scaled up Prodigy's engineering culture by implementing best practices in the areas of documentation, releases, code reviews and source control</li>
-          <li>Worked as part of a task force charged with architecting & implementing a GraphQL gateway; tackled scaling challenges by defining Prodigy's domains from scratch, and implementing resolvers that would hold up at scale</li>
-        </ul>
-        
-        <h3 class="role-heading">
-          <span class="role">Full Stack Developer</span>
-          <span class="organization">Fluid Media</span>
-          <span class="date">May 2014-Apr 2016</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL</li>
-          <li>NGINX</li>
-          <li>Backbone.js</li>
-          <li>HTML/ERB/haml</li>
-          <li>CSS/Sass</li>
-          <li>jQuery</li>
-          <li>Bootstrap</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Prototyped an application designed to collect tax-related information and generate a variety of reports, including visual dashboards and pre-filled tax form PDFs</li>
-          <li>Created a browser-based flooring design tool, leveraging a contemporary stack (Backbone.js, CSS) and meticulously crafted algorithms to achieve an intuitive UX for complex interactions like snapping, drag-and-drop, etc</li>
-          <li>Onboarded a co-op student, integrating the student onto the team with a carefully managed workload and learning opportunities</li>
-        </ul>
-        
-        <h3 class="role-heading">
-          <span class="role">Full Stack Developer (Co-Op)</span>
-          <span class="organization">Albanese Branding</span>
-          <span class="date">May 2013–Nov 2013</span>
-        </h3>
-        <ul class="skills-list" aria-label="Skills">
-          <li>PHP</li>
-          <li>WordPress</li>
-          <li>Apache HTTP Server</li>
-          <li>MySQL</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>jQuery</li>
-          <li>Accessibility</li>
-        </ul>
-        <ul class="responsibilities-list" aria-label="Responsibilities">
-          <li>Served a variety of clients looking for standout web presences—from streamlined homepages to full-featured e-commerce sites</li>
-          <li>Crafted custom WordPress plugins and built custom WordPress themes with an emphasis on responsiveness & accessibility</li>
-        </ul>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Technical Lead, Identity</span>
+            <span class="organization">Prodigy Education</span>
+            <span class="date">(Aug 2021-Present)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>Ruby on Rails</li>
+            <li>Strategic Planning</li>
+            <li>Mentorship</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+            <li>Change Management</li>
+            <li>Apache Kafka</li>
+            <li>GraphQL</li>
+            <li>Legal Compliance</li>
+            <li>Diversity/Equity/Inclusion (DEI)</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Created and drove a backlog of continuous improvement initiatives, emphasizing "the ilities"—maintainability, reliability, security, etc.</li>
+            <li>Specified, prototyped & drove an inner-source initiative to leverage GraphQL caching to improve the performance of an API endpoint that receives >1.5M reqs/hr at peak traffic</li>
+            <li>Collaborated with security and legal specialists to architect and implement a technically and legally robust solution to a major piece of legislation</li>
+            <li>Continued DE&I advocacy by collaborating with an external consultant to gather insights, campaiging to add a full-time DE&I position to the hiring plan, and continually learning how to better support my marginalized colleagues</li>
+          </ul>
+        </div>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Backend Engineer II, Identity</span>
+            <span class="organization">Prodigy Education</span>
+            <span class="date">(Jan 2020-Aug 2021)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>Ruby on Rails</li>
+            <li>PostgreSQL</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+            <li>Apache Kafka</li>
+            <li>Diversity/Equity/Inclusion (DEI)</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Extended OAuth/OIDC functionality within a Rails monolith that serves 5M+ daily sessions and 13M+ daily API requests</li>
+            <li>Implemented a Kafka producer within a Rails monolith, as well as a consumer as a separate service, to enable event-driven communication with other services</li>
+            <li>Improved the consistency and reliability of the development experience by driving an initiative to containerize processes used on development machines</li>
+            <li>Advocated for DE&I by consulting on product decisions, running DE&I retrospectives, and creating/sharing DE&I resources</li>
+          </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Scrum Master/Agile Coach</span>
+            <span class="organization">Prodigy Education</span>
+            <span class="date">(Jun 2017–Jan 2020)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>Agile Methodologies</li>
+            <li>Mentorship</li>
+            <li>Change Management</li>
+            <li>Diversity/Equity/Inclusion (DEI)</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Attained CSM certification and served as Scrum Master on 2-3 teams concurrently</li>
+            <li>Transformed Prodigy's Agile practices & culture by leading dozens of group training sessions, individually mentoring over 15 part- and full-time Scrum Masters, and orchestrating company-wide initiatives like quarterly team health checks</li>
+            <li>Co-founded an employee-organized Diversity, Equity & Inclusion Committee; organized a company-wide DE&I pulse survey that would lay the foundation for regular advocacy work across the organization</li>
+          </ul>
+        </div>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Full Stack Developer</span>
+            <span class="organization">Prodigy Education</span>
+            <span class="date">(Apr 2016–Dec 2017)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>GraphQL</li>
+            <li>Node</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Backbone.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Contributed to a mix of monoliths & microservices to add user-facing features, address security issues, improve API performance, and enable automated testing</li>
+            <li>Scaled up Prodigy's engineering culture by implementing best practices in the areas of documentation, releases, code reviews and source control</li>
+            <li>Worked as part of a task force charged with architecting & implementing a GraphQL gateway; tackled scaling challenges by defining Prodigy's domains from scratch, and implementing resolvers that would hold up at scale</li>
+          </ul>
+        </div>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Full Stack Developer</span>
+            <span class="organization">Fluid Media</span>
+            <span class="date">(May 2014-Apr 2016)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>Ruby on Rails</li>
+            <li>PostgreSQL</li>
+            <li>NGINX</li>
+            <li>Backbone.js</li>
+            <li>HTML/ERB/haml</li>
+            <li>CSS/Sass</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Prototyped an application designed to collect tax-related information and generate a variety of reports, including visual dashboards and pre-filled tax form PDFs</li>
+            <li>Created a browser-based flooring design tool, leveraging a contemporary stack (Backbone.js, CSS) and meticulously crafted algorithms to achieve an intuitive UX for complex interactions like snapping, drag-and-drop, etc</li>
+            <li>Onboarded a co-op student, integrating the student onto the team with a carefully managed workload and learning opportunities</li>
+          </ul>
+        </div>
+
+        <div class="role-section">
+          <h3 class="role-heading">
+            <span class="role">Full Stack Developer (Co-Op)</span>
+            <span class="organization">Albanese Branding</span>
+            <span class="date">(May 2013–Nov 2013)</span>
+          </h3>
+          <ul class="skills-list pill-list" aria-label="Skills">
+            <li>PHP</li>
+            <li>WordPress</li>
+            <li>Apache HTTP Server</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+            <li>Accessibility</li>
+          </ul>
+          <ul class="responsibilities-list" aria-label="Responsibilities">
+            <li>Served a variety of clients looking for standout web presences—from streamlined homepages to full-featured e-commerce sites</li>
+            <li>Crafted custom WordPress plugins and built custom WordPress themes with an emphasis on responsiveness & accessibility</li>
+          </ul>
+        </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>
