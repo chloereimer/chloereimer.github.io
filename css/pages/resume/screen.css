@@ -43,6 +43,7 @@ body {
   #summary {
     grid-area: summary;
     margin-top: 0;
+    margin-bottom: 6rem;
   }
 
   #aside {
@@ -79,6 +80,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 50rem) {
   #header {
     font-size: 6rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  #header {
+    font-size: 7rem;
   }
 }
 
@@ -124,6 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   #summary p {
     font-size: 1.5rem;
     line-height: 1.75;
+  }
+}
+
+@media (min-width: 90rem) {
+  #summary p {
+    font-size: 1.8rem;
   }
 }
 
