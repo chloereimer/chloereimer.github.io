@@ -136,6 +136,7 @@ body * {
 }
 
 #education .program {
+  font-weight: 500;
 }
 
 #education .institution,
