@@ -22,14 +22,14 @@ body * {
 /* header ------------------------------------------------------------------- */
 
 #header {
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 1;
 }
 
 /* summary ------------------------------------------------------------------ */
 
 #summary {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin: 1.25rem 0 1.75rem;
 }
@@ -43,7 +43,7 @@ body * {
 
 #aside {
   box-sizing: border-box;
-  padding: 1rem 2rem 7rem 0;
+  padding: 1rem 2rem 11rem 0;
   border-right: 1px dashed rgba(40, 64, 94, 0.35);
 }
 
@@ -77,9 +77,9 @@ body * {
   flex-direction: column;
 }
 #contact { order: 1; }
-#education { order: 2; }
-#skills { order: 3; }
-#values { order: 4; }
+#skills { order: 2; }
+#values { order: 3; }
+#education { order: 4; }
 
 #aside .pill-list {
   font-size: 0.75rem;
@@ -177,6 +177,7 @@ body * {
 
 #experience .responsibilities-list {
   padding-left: 2.75rem;
+  font-size: 0.85rem;
 }
 
 #experience .responsibilities-list li{
